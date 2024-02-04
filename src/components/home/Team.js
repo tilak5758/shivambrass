@@ -2,6 +2,7 @@ import React from "react";
 import { socialIcons, team } from "../data/Data";
 import { Link } from "react-router-dom";
 import CommonHeading from "../common/CommonHeading";
+import MySwiper from "./Swiper";
 
 export default function Teams() {
   return (
@@ -9,12 +10,12 @@ export default function Teams() {
       <div className="container-xxl py-5">
         <div className="container">
           <CommonHeading
-            heading="Our Team"
+            heading="Our Products"
             subtitle="Explore Our"
-            title="Staffs"
+            title="Products"
           />
           <div className="row g-4">
-            {team.map((item, index) => (
+            {/* {team.map((item, index) => (
               <div
                 className="col-lg-3 col-md-6 wow fadeInUp"
                 data-wow-delay="0.1s"
@@ -41,8 +42,10 @@ export default function Teams() {
                   </div>
                 </div>
               </div>
-            ))}
+            ))} */}
+            <MySwiper/>
           </div>
+
         </div>
       </div>
     </>

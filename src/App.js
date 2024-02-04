@@ -18,6 +18,7 @@ import {
   Testimonial,
 } from "./pages/index";
 import Footer from "./components/common/Footer";
+import MySwiper from "./components/home/Swiper";
 export default function App() {
   return (
     <>
@@ -34,6 +35,8 @@ export default function App() {
             <Route path="/*" element={<PageNotFound />} />
             <Route path="/rooms" element={<Room />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/swiper" element={<MySwiper />} />
+
           </Routes>
           <Footer />
         </Router>

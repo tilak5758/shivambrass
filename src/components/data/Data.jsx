@@ -17,12 +17,12 @@ export const navList = [
   {
     id: 4,
     path: "/rooms",
-    text: "Rooms",
+    text: "Quality",
   },
   {
     id: 5,
     path: "/page",
-    text: "Page",
+    text: "Product",
     subItems: [
       {
         id: 51,
