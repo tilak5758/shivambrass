@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { navList } from "../data/Data";
 import SocialIcons from "./SocialIcons";
+import { IoMdClose, IoMdMenu } from "react-icons/io";
 
 export default function Header() {
   const [navbarCollapse, setNavbarCollapse] = useState(false);
@@ -14,6 +15,10 @@ export default function Header() {
 
   const handleMouseLeave = () => {
     setActiveDropdown(null);
+  };
+
+  const handleToggle = () => {
+    setNavbarCollapse(!navbarCollapse);
   };
 
   return (
@@ -36,9 +41,14 @@ export default function Header() {
               <button
                 type="button"
                 className="navbar-toggler"
-                onClick={() => setNavbarCollapse(!navbarCollapse)}
+                // onClick={() => setNavbarCollapse(!navbarCollapse)}
+                onClick={handleToggle}
               >
-                <span className="navbar-toggler-icon"></span>
+                {navbarCollapse ? (
+                  <IoMdClose  />
+                ) : (
+                  <IoMdMenu  />
+                )}
               </button>
               <div
                 className={
@@ -55,14 +65,14 @@ export default function Header() {
                           className="nav-item dropdown"
                           onMouseEnter={() => handleMouseEnter(item.id)}
                           onMouseLeave={handleMouseLeave}
+
                         >
-                          <Link className="nav-link dropdown-toggle">
+                          <Link className="nav-link dropdown-toggle " >
                             {item.text}
                           </Link>
                           <div
-                            className={`dropdown-menu rounded-0 m-0 ${
-                              activeDropdown === item.id ? "show" : ""
-                            }`}
+                            className={`dropdown-menu rounded-0 m-0 ${activeDropdown === item.id ? "show" : ""
+                              }`}
                           >
                             {item.subItems.map((sub) => (
                               <Link to={sub.path} className="dropdown-item">

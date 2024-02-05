@@ -7,7 +7,7 @@ import MySwiper from "../components/home/Swiper";
 export default function Team() {
   return (
     <>
-      <Heading heading="Team" title="Home" subtitle="Team" />
+      <Heading heading="Products" title="Home" subtitle="Products" />
       {/* <Teams /> */}
       <MySwiper/>
     </>

@@ -28,15 +28,14 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/booking" element={<Booking />} />
-            <Route path="/team" element={<Team />} />
+            <Route path="/allproducts" element={<Team />} />
             <Route path="/testimonial" element={<Testimonial />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/*" element={<PageNotFound />} />
-            <Route path="/rooms" element={<Room />} />
+            <Route path="/quality" element={<Room />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/swiper" element={<MySwiper />} />
-
+            <Route path="/products" element={<MySwiper />} />
           </Routes>
           <Footer />
         </Router>

@@ -23,6 +23,22 @@ export default function Footer() {
                 </p>
               </div>
             </div>
+            <div className="col-lg-5 col-md-12">
+              <div className="row gy-5 g-4">
+                {footerItem.map((section, sectionIndex) => (
+                  <div className="col-md-6" key={sectionIndex}>
+                    <h6 className="section-title text-start text-primary text-uppercase mb-4">
+                      {section.header}
+                    </h6>
+                    {section.UnitItem.map((item, itemIndex) => (
+                      <a className="btn btn-link" href="" key={itemIndex}>
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
             <div className="col-md-6 col-lg-3">
               <h6 className="section-title text-start text-primary text-uppercase mb-4">
                 Contact
@@ -40,22 +56,7 @@ export default function Footer() {
                 ))}
               </div>
             </div>
-            <div className="col-lg-5 col-md-12">
-              <div className="row gy-5 g-4">
-                {footerItem.map((section, sectionIndex) => (
-                  <div className="col-md-6" key={sectionIndex}>
-                    <h6 className="section-title text-start text-primary text-uppercase mb-4">
-                      {section.header}
-                    </h6>
-                    {section.UnitItem.map((item, itemIndex) => (
-                      <a className="btn btn-link" href="" key={itemIndex}>
-                        {item.name}
-                      </a>
-                    ))}
-                  </div>
-                ))}
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>

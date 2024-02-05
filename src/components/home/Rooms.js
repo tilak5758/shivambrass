@@ -8,8 +8,8 @@ export default function Rooms() {
       <div className="container-xxl py-5">
         <div className="container">
           <CommonHeading
-            heading="Our Rooms"
-            title="Rooms"
+            heading="Our Quality"
+            title="Quality"
             subtitle="Explore Our"
           />
           <div className="row g-4">

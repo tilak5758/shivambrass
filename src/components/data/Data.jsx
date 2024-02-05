@@ -16,7 +16,7 @@ export const navList = [
   },
   {
     id: 4,
-    path: "/rooms",
+    path: "/quality",
     text: "Quality",
   },
   {
@@ -31,8 +31,8 @@ export const navList = [
       },
       {
         id: 52,
-        path: "/team",
-        text: "Our Team",
+        path: "/allproducts",
+        text: "Our Products",
       },
       {
         id: 53,
@@ -217,19 +217,19 @@ export const footerContact = [
 ];
 
 export const contact = [
+  // {
+  //   icon: <i class="fa fa-envelope-open text-primary me-2"></i>,
+  //   title: "Booking",
+  //   email: "book@example.com",
+  // },
+  // {
+  //   icon: <i class="fa fa-envelope-open text-primary me-2"></i>,
+  //   title: "Technical",
+  //   email: "tech@example.com",
+  // },
   {
     icon: <i class="fa fa-envelope-open text-primary me-2"></i>,
-    title: "Booking",
-    email: "book@example.com",
-  },
-  {
-    icon: <i class="fa fa-envelope-open text-primary me-2"></i>,
-    title: "Technical",
-    email: "tech@example.com",
-  },
-  {
-    icon: <i class="fa fa-envelope-open text-primary me-2"></i>,
-    title: "General",
+    title: "Contact Info",
     email: "info@example.com",
   },
 ];

@@ -1,11 +1,11 @@
-*,
+/* *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style-type: none;
-}
+} */
 
 :root {
   /* --primary: #6a59ff; */
@@ -14,7 +14,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  /* font-size: 62.5%; */
   scroll-behavior: smooth;
 }
 
@@ -38,7 +38,7 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
   background: var(--bg);
 }
 
